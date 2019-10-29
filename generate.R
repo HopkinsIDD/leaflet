@@ -6,6 +6,8 @@
 library(raster)
 library(tiler)
 library(RColorBrewer)
+library(taxdat)
+library(rgdal)
 
 # 
 # pal <- colorNumeric("viridis", NULL)
@@ -27,8 +29,8 @@ colsramp3 <-colorRampPalette(colsramp3, space = "Lab")
 colsramp4 <- brewer.pal(9, name="RdYlGn")
 colsramp4 <-colorRampPalette(colsramp4, space = "Lab")
 
-raster_directory <- "~/svn/cholera-taxonomy/trunk/manuscripts/GAVI Impact Estimation/data/"
-repository_directory <- "~/git/leaflet"
+raster_directory <- "~/Desktop/Lessler-Lab/svn/cholera-taxonomy/trunk/manuscripts/GAVI Impact Estimation/data/"
+repository_directory <- "~/Desktop/Lessler-Lab/maps/leaflet"
 ## This will generate temporary files in your home directory
 
 rates <- raster::raster(paste(raster_directory,"afro_2010-2016_lambdas_raster_stack_upd.grd",sep='/'))
