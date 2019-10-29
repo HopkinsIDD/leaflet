@@ -50,7 +50,7 @@ tiler::tile(
   "0-7",
   crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0",
   col = rev(colsramp3(255)),
-  zlim = c(-2,4)
+  zlim = c(-4,4)
 )
 tiler::tile(
   paste(repository_directory,'rates.tif',sep='/'),
